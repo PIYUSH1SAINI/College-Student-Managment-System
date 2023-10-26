@@ -1,0 +1,400 @@
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  background-color: rgb(26, 19,  78);
+  /* height: 100vh;
+  width: 100vw; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wrapper {
+  background-color: rgb(117, 113, 159);
+  width: 80%;
+  height: 85vh;
+  margin: 0 0 0 10rem;
+  overflow-y: scroll;
+}
+.wrapper::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+.skill {
+  width: 160px;
+  height: 160px;
+  /* background-color: cornflowerblue; */
+  position: relative;
+}
+.outer {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding: 20px;
+  border: 1px solid gray;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px #888888;
+}
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px #888888, -0.5px -0.5px 0px #888888,
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.05);
+}
+.number {
+  font-weight: 600px;
+  color: #555;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+circle {
+  fill: none;
+  stroke: cornflowerblue;
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  /* stroke-dasharray: 100; */
+  /* stroke-dashoffset: 90; */
+  /* animation: anim 2s linear forwards; */
+}
+@keyframes g {
+  100% {
+    stroke-dashoffset: 65.9;
+  }
+}
+@keyframes y {
+  100% {
+    stroke-dashoffset: 103.8;
+  }
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.attendance-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.h1 {
+  /* font-size: large; */
+  /* margin-left: 100px; */
+  text-align: center;
+}
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+.percentage {
+  display: relative;
+}
+h4 {
+  margin: 0rem;
+}
+
+.max-table {
+  width: 80%;
+  border: 1px solid black;
+}
+.sai {
+  background-color: red;
+}
+.tab td {
+  width: 7rem;
+  padding: 1rem;
+  color: black;
+  text-align: center;
+}
+/* .tab tr {
+  width: 100%;
+} */
+
+.tab tr {
+  width: 100%;
+  border: 1px solid black;
+  color: black;
+  /* text-align: center; */
+}
+.tab h3 {
+  color: black;
+}
+.tab table {
+  width: 95%;
+  border-collapse: collapse;
+  border: none;
+  border-bottom: solid 2px gray;
+  /* text-align: center; */
+}
+.tab {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+  font-size: 12px;
+}
+.yellow {
+  stroke: rgb(255, 244, 30);
+  animation: y 2s linear forwards;
+}
+.red {
+  stroke: red;
+  animation: r 2s linear forwards;
+}
+@keyframes r {
+  100% {
+    stroke-dashoffset: 259;
+  }
+}
+@keyframes r {
+  100% {
+    stroke-dashoffset: 259;
+  }
+}
+
+.green {
+  stroke: green;
+  animation: g 2s linear forwards;
+}
+.orange {
+  stroke: orange;
+  animation: o 2s linear forwards;
+}
+@keyframes o {
+  100% {
+    stroke-dashoffset: 165;
+  }
+}
+/* .register-main {
+  color: black;
+  background-color: white;
+  height: 85vh;
+  width: 82%;
+  float: left;
+  margin: 2rem 0 0 2rem;
+  font-family: "DM Sans", sans-serif;
+  border-left: solid 5px white;
+  border-right: solid 5px white;
+  border-bottom: solid 5px white;
+}
+
+.reg-navbar {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  background-color: white;
+  box-shadow: 2px 1px 20px 0 gray;
+  margin: 0;
+  position: sticky;
+  top: 0;
+}
+
+.reg-navbar li:first-child {
+  margin: 0.5rem 0.5rem 0.5rem -1rem;
+}
+
+.reg-navbar li {
+  margin: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.reg-navbar a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+.reg-navbar a:hover {
+  background-color: green;
+  border-radius: 5px;
+  transition: all 0.5s;
+  color: white;
+}
+
+.reg-navbar a:focus {
+  background-color: green;
+  border-radius: 5px;
+  transition: all 0.5s;
+  color: white;
+} */
+
+/* hostel form */
+````````` .hostelroom {
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+  text-align: center;
+  height: 90%;
+  margin: 0.5rem 0;
+}
+
+.hostelhead {
+  text-align: center;
+  line-height: 0.5rem;
+}
+
+.hostelform {
+  display: flex;
+  flex-direction: row;
+  margin: 2.5rem 0;
+  justify-content: center;
+  text-align: start;
+}
+
+.hfinner {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  line-height: 0;
+  margin: 0 0 0 3rem;
+}
+
+.hfinner1 {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  line-height: 0;
+  margin: 0 1rem;
+}
+
+.hfinner2 {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  /* text-align: center; */
+}
+
+.hfinner2 div {
+  margin: 0.3rem 0;
+}
+
+.hfinner2 input {
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  outline: none;
+}
+
+.hfinner2 input:focus {
+  border-bottom: 2px solid red;
+}
+
+::placeholder {
+  color: rgba(173, 173, 173, 0.607);
+}
+
+.submit-btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 10rem;
+  border: none;
+  /* margin: -1rem 0; */
+}
+
+.submit-btn:hover {
+  background-color: greenyellow;
+  transition: all 0.5s;
+  scale: 1.1;
+}
+
+.fee-type {
+  margin: 0 2rem;
+  width: 20rem;
+  height: 11rem;
+  padding: 0 0 1.5rem 0;
+  background-color: rgba(214, 214, 214, 0.299);
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.options {
+  height: 3rem;
+  width: 10rem;
+}
+/* .wrapper {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.contain {
+  /* margin-top: 5rem; */
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 47vh;
+  margin-left: 10rem;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  padding-right: 1rem;
+  padding-bottom: 10rem;
+  outline-offset: rgba(255, 255, 255, 0.683);
+  /* border: solid black 2px; */
+  border-radius: 1rem;
+  background-color: rgb(117, 113, 159);
+  outline: 3px rgb(237, 234, 234);
+}
+
+.tb {
+  /* border: solid gray 2px; */
+  font-size: 1rem;
+  /* height: 85vh; */
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.contain th {
+  font-size: large;
+}
+
+/* th,td,tr{
+border: solid black 1px;
+} */
+
+.sno {
+  text-align: center;
+}
+.doc {
+  margin-left: 0.5rem;
+}
+.file {
+  text-align: end;
+}
+
+.submit,
+.abc {
+  text-align: center;
+}
+.submit button {
+  background-color: rgb(236, 92, 92);
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.content {
+  height: 100%;
+  width: 98%;
+  /* border: solid black 1px; */
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+span {
+  color: red;
+  font-size: large;
+}

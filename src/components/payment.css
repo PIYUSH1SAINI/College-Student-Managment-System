@@ -1,0 +1,174 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+.wrapperfee {
+  height: 85vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  float: left;
+}
+
+.payfee {
+  background-color: rgb(245, 245, 245);
+  width: 60rem;
+  height: 30rem;
+  border: solid black 2px;
+  display: flex;
+  margin: 0 0 0 5rem;
+  /* color: black; */
+}
+
+.infofee {
+  width: 55%;
+  height: 100%;
+  border: black solid 1px;
+}
+
+.infofee form {
+  height: 100%;
+}
+.infofee .info_table {
+  width: 100%;
+  height: 80%;
+  font-size: 1.4rem;
+  text-align: start;
+  padding-left: 0.5rem;
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.infofee .info_table input {
+  width: 70%;
+  height: 70%;
+}
+
+.info_table td {
+  color: black;
+}
+
+span {
+  font-size: 1.7rem;
+}
+.infofee .info_table button {
+  font-size: 1.3rem;
+  text-align: center;
+  width: 70%;
+}
+.infofee .info_table #upi {
+  font-size: 1.3rem;
+  width: 6rem;
+  height: 3rem;
+}
+.infofee .info_table #up {
+  text-align: center;
+}
+
+.info .info_table #opt {
+  text-align: center;
+}
+
+.opt {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.opt .opt_table {
+  width: 20rem;
+  height: 70%;
+  font-size: 1.4rem;
+  text-align: start;
+  padding-left: 1rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  /* padding-left: 2rem; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #eee;
+}
+
+.opt .opt_table input {
+  width: 70%;
+  height: 2rem;
+}
+
+.opt .opt_table button {
+  width: 100%;
+  font-size: 1.5rem;
+  height: 2.5rem;
+  background-color: rgb(219, 13, 13);
+  border-radius: 0.5rem;
+}
+
+.opt_table td {
+  color: black;
+}
+
+.opt_table h1 {
+  color: black;
+}
+
+.opt .opt_table select {
+  font-size: 1.3rem;
+}
+
+/* .opt .opt_table .cvv {
+  width: 3rem;
+} */
+
+.upi {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.upi_image {
+  padding-top: 4rem;
+  padding-left: 5rem;
+}
+
+.payment-form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #eee;
+  margin-left: 2.5rem;
+  margin-top: 3rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pay button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pay button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,487 @@
+body {
+  background-color: lightgrey;
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar start */
+
+.nav-main {
+  margin: -1rem 0;
+  padding: 1rem 0 0 0;
+  width: 10rem;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  float: left;
+}
+
+.firstli {
+  height: 2rem;
+  padding: 0.7rem 0 0.5rem 0.5rem;
+  font-size: 10px;
+  margin: 0 0 1rem -0.5rem;
+  background-color: lightskyblue;
+  width: 9.5rem;
+  margin: 0 auto;
+  border-right: solid 3px blue;
+}
+
+.dash-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background-color: green; */
+  width: 100%;
+  justify-content: center;
+  margin: 0 0 0 -0.5rem;
+}
+
+.nav-main ul {
+  list-style-type: none;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.nav-main li {
+  width: 96%;
+  height: 2rem;
+  padding: 0.7rem 1.5rem 0.4rem 0.5rem;
+  font-size: 10px;
+  margin: 0 0 1rem -1.5rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.nav-main li:hover {
+  background-color: rgb(192, 222, 131);
+  border-right: solid 3px green;
+  transition: background-color 0.5s;
+}
+
+.nav-main ul a:focus {
+  background-color: rgb(192, 222, 131);
+  border-right: solid 3px green;
+  width: 100%;
+  height: 2rem;
+  padding: 0.7rem 1.5rem 0.4rem 0.5rem;
+  font-size: 10px;
+  margin: -0.7rem 0 1rem -0.8rem;
+  border-radius: 1rem 0 0 1rem;
+  /* scale: 1.1; */
+}
+
+.nav-main a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-main h3 {
+  margin: 0 0 0 1rem;
+}
+
+.signout {
+  background-color: rgba(0, 0, 0, 0.84);
+  border-radius: 0.5rem;
+  width: 6.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.signout h3 {
+  color: white;
+}
+
+/* navbar end */
+
+/* dashboard start */
+
+.dash-main {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  width: auto;
+}
+
+.dash {
+  height: 170vh;
+  margin: 0 0 0 2rem;
+  width: 95%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.wlcm-message {
+  font-family: "Russo One", sans-serif;
+}
+
+.infodash {
+  border: solid 2px black;
+  background-color: white;
+  padding: 2rem;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 0 2rem 0;
+}
+
+.studdash {
+  background-color: lightskyblue;
+  border-radius: 1rem 0 1rem 0;
+  padding: 0.5rem;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  line-height: 1rem;
+}
+.studdash:hover {
+  background-color: red;
+}
+.num {
+  text-align: center;
+}
+
+.secondblockdash {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 19.6rem;
+}
+
+.left {
+  width: 50%;
+  height: 19.6rem;
+  background-color: white;
+  border: solid 2px black;
+}
+
+.right {
+  width: 45%;
+  height: 19.6rem;
+  background-color: white;
+}
+
+.secondblockdash table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.secondblockdash tr,
+.secondblockdash td,
+.secondblockdash th {
+  border: solid 2px #dddddd;
+  padding: 0.5rem;
+  color: black;
+}
+
+.secondblockdash tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.paid {
+  background-color: greenyellow;
+}
+
+.due {
+  background-color: red;
+}
+
+.activitydash {
+  border: solid 2px black;
+  width: 100%;
+  height: 100%;
+  margin: 0 2rem 0 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.activitydash h2 {
+  width: 99%;
+  padding: 0.3rem;
+  font-size: 18px;
+  margin: 0;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  background-color: white;
+  border-bottom: solid 2px black;
+  color: black;
+  box-shadow: 15px 0 20px 5px lightgrey;
+}
+
+.activitydash ul {
+  padding: 0.5rem;
+  font-size: 13px;
+  margin: 0;
+}
+
+.listdash {
+  line-height: 0px;
+  padding-bottom: 0.5rem;
+}
+
+.activitydatedash {
+  background-color: white;
+  position: sticky;
+  top: 3rem;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(163, 163, 163, 0.635);
+}
+
+.inner-uldash {
+  margin-left: 0.5rem;
+}
+
+.inner-uldash li {
+  line-height: 15px;
+}
+
+/* bargraph */
+
+.avgtraffic {
+  border: solid 2px black;
+  background-color: white;
+  padding: 1rem;
+  position: relative;
+  margin: 2rem 0 0 0;
+}
+
+.title {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.bar-group .name-label {
+  text-anchor: end;
+  font-weight: 300;
+  font-size: 1em;
+  fill: #333;
+  float: left;
+}
+
+.bar-group .value-label {
+  text-anchor: end;
+  fill: #fff;
+  font-weight: 900;
+  font-size: 0.7em;
+}
+
+.container .bar-group {
+  transition: opacity 0.3s;
+}
+
+.container:hover .bar-group {
+  opacity: 0.3;
+}
+
+.container .bar-group:hover {
+  opacity: 1;
+}
+
+.container .bar-group:hover .name-label {
+  font-weight: 400;
+}
+
+.container .bar-group:hover .value-label {
+  font-size: 0.8em;
+}
+
+/* dashboard end */
+
+/* student start */
+
+.register-mainad {
+  color: black;
+  background-color: white;
+  height: 85vh;
+  width: 82%;
+  float: left;
+  margin: 2rem 0 0 2rem;
+  font-family: "DM Sans", sans-serif;
+  border-left: solid 5px white;
+  border-right: solid 5px white;
+  border-bottom: solid 5px white;
+}
+
+.reg-navbarad {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  background-color: white;
+  box-shadow: 2px 1px 20px 0 gray;
+  margin: 0;
+  position: sticky;
+  top: 0;
+}
+
+.reg-navbarad li:first-child {
+  margin: 0.5rem 0.5rem 0.5rem -1rem;
+}
+
+.reg-navbarad li {
+  margin: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.reg-navbarad a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+.reg-navbarad a:hover {
+  background-color: green;
+  border-radius: 5px;
+  transition: all 0.5s;
+  color: white;
+}
+
+.reg-navbarad a:focus {
+  background-color: green;
+  border-radius: 5px;
+  transition: all 0.5s;
+  color: white;
+}
+
+/* hostel form */
+
+.hostelroomad {
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+  text-align: center;
+  height: 90%;
+  margin: 0.5rem 0;
+}
+
+.adminstudent {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5rem 0 0 0;
+}
+
+.adminstudent table {
+  width: 100%;
+  border: solid 2px black;
+  border-collapse: collapse;
+}
+
+.adminstudent tr,
+.adminstudent td,
+.adminstudent th {
+  color: black;
+  border: solid 2px black;
+  padding: 0.5rem;
+}
+
+.adminstudent th {
+  background-color: gray;
+  color: white;
+}
+
+.hostelheadad {
+  text-align: center;
+  line-height: 0.5rem;
+}
+
+.hostelformad {
+  display: flex;
+  flex-direction: row;
+  margin: 2.5rem 0;
+  justify-content: center;
+  text-align: start;
+}
+
+.hfinner {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  line-height: 0;
+  margin: 0 0 0 3rem;
+}
+
+.hfinner1 {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  line-height: 0;
+  margin: 0 1rem;
+}
+
+.hfinner2 {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  /* text-align: center; */
+}
+
+.hfinner2 div {
+  margin: 0.3rem 0;
+}
+
+.hfinner2 input {
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  outline: none;
+}
+
+.hfinner2 input:focus {
+  border-bottom: 2px solid red;
+}
+
+::placeholder {
+  color: rgba(173, 173, 173, 0.607);
+}
+
+.submit-btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 10rem;
+  border: none;
+  /* position: relative;
+  left:300px; */
+
+  /* margin: -1rem 0; */
+}
+
+.submit-btn:hover {
+  background-color: greenyellow;
+  transition: all 0.5s;
+  scale: 1.1;
+}
+
+.fee-type {
+  margin: 0 2rem;
+  width: 20rem;
+  height: 11rem;
+  padding: 0 0 1.5rem 0;
+  background-color: rgba(214, 214, 214, 0.299);
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.options {
+  height: 3rem;
+  width: 10rem;
+}
+
+/* student end */
